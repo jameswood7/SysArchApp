@@ -1,0 +1,31 @@
+import com.app.Doctor
+
+class BootStrap {
+
+    def init = { servletContext ->
+def Doc1 = new Doctor(
+	doctorName:'James Wood',
+	qualifications:'1st',
+	position:'Head Doc',
+	doctorEmail:'doc@doc.com',
+	password:'sysarch',
+	doctorOffice:'A-1',
+	doctorPhone:'074832493243',
+	bio:'best doc ever').save()
+
+	}
+def Doc1 = new Doctor(
+        doctorName:'James Wood',
+        qualifications:'1st',
+        position:'Head Doc',
+        doctorEmail:'doc@doc.com',
+        password:'sysarch',
+        doctorOffice:'A-1',
+        doctorPhone:'074832493243',
+        bio:'best doc ever').save()
+
+        }
+
+    def destroy = {
+    }
+}
